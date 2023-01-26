@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% block titulo %}Portada {% endblock %}
+
+{% block background %}{% load static %}{% static 'img/home-bg.jpg' %}{% endblock %}
+
+{% block cabecera %}
+<h1>Franco Adduci</h1>
+<span class="subheading">Desarrollador Backend</span>
+{% endblock %}
+
+{% block contenido %}
+<div class="row">
+    <div class="col-lg-8 col-md-10 mx-auto">
+        <ul class="list-inline text-center">
+            <li class="list-inline-item">
+                <img class="" src="{% static 'icono/python.png' %}" alt="">
+                <img class="" src="{% static 'icono/django.png' %}" alt="">
+                <img class="" src="{% static 'icono/java.png' %}" alt="">
+                <img class="" src="{% static 'icono/kotlin.png' %}" alt="">
+                <img class="" src="{% static 'icono/js.png' %}" alt="">
+                <img class="" src="{% static 'icono/sql.png' %}" alt="">
+                <img class="" src="{% static 'icono/html5.png' %}" alt="">
+                <img class="" src="{% static 'icono/css.png' %}" alt="">
+            </li>
+        </ul>        
+    </div>
+</div>
+<br>
+<br>
+<br>        
+{% endblock %}
+

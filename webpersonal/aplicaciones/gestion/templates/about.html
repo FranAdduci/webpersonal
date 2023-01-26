@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block titulo %}Acerca de {% endblock %}
+
+{% block background %}{% load static %}{% static 'img/about-bg.jpg' %}{% endblock %}
+
+{% block cabecera %}
+<h1>Acerca de</h1>
+<span class="subheading"></span>
+{% endblock %}
+
+{% block contenido %}
+<div class="row">
+    <div class="col-lg-3 col-md-4 offset-lg-1">
+        <img class="img-fluid avatar" src="{% static 'img/fp.jpg' %}" alt="">
+    </div>
+    <div class="col-lg-7 col-md-8">
+        <h2 class="section-heading">Franco Adduci</h2>   
+        <p>Actualmente me encuentro en 3°Año de la carrera Licenciatura en Informática en UAA.</p>
+        <p>PM / Analista - Desarrollo BA en Telefónica Argentina</p>
+        <p>Dev Backend Python</p>
+
+    </div>
+</div>
+{% endblock %}
